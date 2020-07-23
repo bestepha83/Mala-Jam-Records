@@ -12,21 +12,24 @@ const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <section title={siteTitle} className = "home-banner">
-      <SEO 
-        title="Home" 
-        keywords={[`mala jam`, `malajam`, `record label`, `music`, `artists`, `releases`]} 
+    <section title={siteTitle} className="home-banner">
+      <SEO
+        title="Home"
+        keywords={[
+          `mala jam`,
+          `malajam`,
+          `record label`,
+          `music`,
+          `artists`,
+          `releases`,
+          `la record label`,
+        ]}
       />
 
-      <div  id = "top"></div>
-      <video 
-            className="video-player"
-            loop
-            muted
-            autoPlay
-          >
-            <source src={BannerVideo} type="video/mp4" />
-      </video> 
+      <div id="top"></div>
+      <video className="video-player" loop muted autoPlay>
+        <source src={BannerVideo} type="video/mp4" />
+      </video>
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h1>Mala Jam Records</h1>
@@ -34,12 +37,10 @@ const BlogIndex = ({ data }) => {
             {data.site.siteMetadata.description}
           </h2>
           <Link to="/artists" className="button primary large">
-              Explore
-          </Link>    
-     
+            Explore
+          </Link>
         </header>
       )}
-
     </section>
   )
 }
@@ -51,10 +52,11 @@ const indexQuery = graphql`
         title
         description
       }
-    } 
+    }
     allMarkdownRemark(
-      filter: {frontmatter: {category: {eq: "artist"}}}
-      sort: { fields: [frontmatter___date], order: DESC }) {
+      filter: { frontmatter: { category: { eq: "artist" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt
