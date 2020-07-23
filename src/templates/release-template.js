@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CalculateArtist from "../components/calculateartist"
+import CalculateArtist from "../components/CalculateArtist"
 
 class BlogPostTemplate extends React.Component {
   render() {

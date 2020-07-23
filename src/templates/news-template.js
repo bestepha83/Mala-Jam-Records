@@ -6,7 +6,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import CalculateArtist from "../components/calculateartist"
+import CalculateArtist from "../components/CalculateArtist"
 
 import { FaChevronDown } from "react-icons/fa"
 

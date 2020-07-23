@@ -5,7 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Scroll from "../components/backtotop"
+import Scroll from "../components/backToTop"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"

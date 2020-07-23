@@ -3,8 +3,8 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/releasecard"
-import Scroll from "../components/backtotop"
+import PostCard from "../components/releaseCard"
+import Scroll from "../components/backToTop"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"

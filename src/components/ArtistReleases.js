@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { getPostsFromQuery } from "./related"
 import { includes, orderBy } from "lodash"
-import ArtistReleaseCard from "./artistreleasecard"
+import ArtistReleaseCard from "./artistReleaseCard"
 import "../utils/css/screen.css"
 
 class SimilarArticlesFactory {

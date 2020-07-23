@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SimilarArticlesComponent from "../components/artistreleases"
+import SimilarArticlesComponent from "../components/artistReleases"
 
 import {
   FaFacebookSquare,
