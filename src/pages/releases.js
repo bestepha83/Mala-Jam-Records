@@ -3,8 +3,8 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/releaseCard"
-import Scroll from '../components/backToTop'
+import PostCard from "../components/releasecard"
+import Scroll from "../components/backtotop"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -16,13 +16,20 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO 
-        title="Releases" 
-        keywords={[`mala jam`, `malajam`, `record label`, `music`, `artists`, `releases`]} 
+      <SEO
+        title="Releases"
+        keywords={[
+          `mala jam`,
+          `malajam`,
+          `record label`,
+          `music`,
+          `artists`,
+          `releases`,
+        ]}
       />
 
-      <Scroll showBelow = {250}/>
-      <h2 className = "page-title">Discography</h2>
+      <Scroll showBelow={250} />
+      <h2 className="page-title">Discography</h2>
       <div className="release-feed">
         {releases.map(({ node }) => {
           releaseCounter++
@@ -49,8 +56,9 @@ const indexQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {category: {eq: "release"}}}
-      sort: { fields: [frontmatter___date], order: DESC }) {
+      filter: { frontmatter: { category: { eq: "release" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt

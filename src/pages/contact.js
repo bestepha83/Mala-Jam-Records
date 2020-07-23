@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-// import Contact from "../components/contact"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
@@ -14,45 +13,43 @@ const ContactPage = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO 
-        title="Contact" 
-        keywords={[`mala jam`, `malajam`, `record label`, `music`, `artists`, `releases`]} 
+      <SEO
+        title="Contact"
+        keywords={[
+          `mala jam`,
+          `malajam`,
+          `record label`,
+          `music`,
+          `artists`,
+          `releases`,
+        ]}
       />
 
       <article className="contact page-template">
         <div className="post-content-body">
-          <div className = "contact-header">
-            <h2>
-              Work With Us!
-            </h2>
+          <div className="contact-header">
+            <h2>Work With Us!</h2>
             <p>
-              For bookings and general inquiries, please fill out the 
-              form below.
+              For bookings and general inquiries, please fill out the form
+              below.
             </p>
-            <p>
-              For demo submissions, please include a file or link.
-            </p>
-          </div> 
-          <div className = "row">
-            <div className = "col-6">
+            <p>For demo submissions, please include a file or link.</p>
+          </div>
+          <div className="row">
+            <div className="col-6">
               <figure className="kg-image-card">
                 <Img
                   fluid={data.mainAbout.childImageSharp.fluid}
                   className="kg-image"
                 />
-              </figure>        
+              </figure>
             </div>
-            <div className = "col-6">
-              <form method="post" action="POST" data-netlify = "true">
-                <div className = "contact-input">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                  />
+            <div className="col-6">
+              <form method="post" action="POST" data-netlify="true">
+                <div className="contact-input">
+                  <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
-                <div className = "contact-input">
+                <div className="contact-input">
                   <input
                     type="email"
                     name="email"
@@ -60,7 +57,7 @@ const ContactPage = ({ data }) => {
                     placeholder="Email"
                   />
                 </div>
-                <div className = "contact-input">
+                <div className="contact-input">
                   <select name="category" id="category">
                     <option value>- Category -</option>
                     <option value={1}>Bookings</option>
@@ -69,17 +66,18 @@ const ContactPage = ({ data }) => {
                     <option value={1}>Just Wanna Say Hi!</option>
                   </select>
                 </div>
-                <div className = "">
-                  <input type="file" 
-                  name = "myFile" 
-                  id = "myFile"
-                  placeholder = "Upload Demo"
-                  /> 
+                <div className="">
+                  <input
+                    type="file"
+                    name="myFile"
+                    id="myFile"
+                    placeholder="Upload Demo"
+                  />
                 </div>
                 <div>
                   <div data-netlify-recaptcha="true"></div>
                 </div>
-                <div className = "contact-input">
+                <div className="contact-input">
                   <textarea
                     name="message"
                     id="message"
@@ -102,10 +100,9 @@ const ContactPage = ({ data }) => {
                     </li>
                   </ul>
                 </div>
-              </form>            
+              </form>
             </div>
           </div>
-
         </div>
       </article>
     </Layout>
@@ -119,9 +116,7 @@ const indexQuery = graphql`
         title
       }
     }
-    mainAbout: file(
-      relativePath: { eq: "GBE.jpg" }
-    ) {
+    mainAbout: file(relativePath: { eq: "GBE.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid

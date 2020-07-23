@@ -3,8 +3,8 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/newsCard"
-import Scroll from '../components/backToTop'
+import PostCard from "../components/newscard"
+import Scroll from "../components/backtotop"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -16,13 +16,20 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO 
-        title="News" 
-        keywords={[`mala jam`, `malajam`, `record label`, `music`, `artists`, `releases`]} 
+      <SEO
+        title="News"
+        keywords={[
+          `mala jam`,
+          `malajam`,
+          `record label`,
+          `music`,
+          `artists`,
+          `releases`,
+        ]}
       />
 
-      <Scroll showBelow = {250}/>
-      <h2 className = "page-title">What's New At Mala Jam?</h2>
+      <Scroll showBelow={250} />
+      <h2 className="page-title">What's New At Mala Jam?</h2>
       <div className="news-feed">
         {news.map(({ node }) => {
           newsCounter++
@@ -49,8 +56,9 @@ const indexQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {category: {eq: "news"}}}
-      sort: { fields: [frontmatter___date], order: DESC }) {
+      filter: { frontmatter: { category: { eq: "news" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt

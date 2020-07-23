@@ -3,8 +3,8 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/artistCard"
-import Scroll from '../components/backToTop'
+import PostCard from "../components/artistcard"
+import Scroll from "../components/backtotop"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -16,14 +16,21 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO 
-        title="Artists" 
-        keywords={[`mala jam`, `malajam`, `record label`, `music`, `artists`, `releases`]} 
+      <SEO
+        title="Artists"
+        keywords={[
+          `mala jam`,
+          `malajam`,
+          `record label`,
+          `music`,
+          `artists`,
+          `releases`,
+        ]}
       />
 
       <section>
-        <Scroll showBelow = {100}/>
-        <h2 className = "page-title">Artists</h2>
+        <Scroll showBelow={100} />
+        <h2 className="page-title">Artists</h2>
         <div className="artist-feed">
           {artists.map(({ node }) => {
             artistCounter++
@@ -38,7 +45,6 @@ const BlogIndex = ({ data }) => {
           })}
         </div>
       </section>
-
     </Layout>
   )
 }
@@ -52,9 +58,9 @@ const indexQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {category: {eq: "artist"}}}
+      filter: { frontmatter: { category: { eq: "artist" } } }
       sort: { fields: [frontmatter___date], order: DESC }
-      ) {
+    ) {
       edges {
         node {
           excerpt
