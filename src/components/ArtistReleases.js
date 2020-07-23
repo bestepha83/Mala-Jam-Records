@@ -1,80 +1,81 @@
-
-import React from 'react'
+import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { getPostsFromQuery } from './related'
-import { includes, orderBy } from 'lodash'
-import ArtistReleaseCard from './artistReleaseCard'
+import { getPostsFromQuery } from "./related"
+import { includes, orderBy } from "lodash"
+import ArtistReleaseCard from "./artistreleasecard"
 import "../utils/css/screen.css"
 
 class SimilarArticlesFactory {
-  constructor (articles, currentArticleSlug) {
-    this.currentArticleSlug = currentArticleSlug;
-    this.articles = articles.filter((aArticle) => aArticle.slug !== currentArticleSlug);
+  constructor(articles, currentArticleSlug) {
+    this.currentArticleSlug = currentArticleSlug
+    this.articles = articles.filter(
+      aArticle => aArticle.slug !== currentArticleSlug
+    )
     this.tags = []
   }
 
-  setMaxArticles (m) {
-    this.maxArticles = m;
-    return this;
+  setMaxArticles(m) {
+    this.maxArticles = m
+    return this
   }
 
-  setTags (tagsArray) {
-    this.tags = tagsArray;
-    return this;
+  setTags(tagsArray) {
+    this.tags = tagsArray
+    return this
   }
 
-  getArticles () {
-    const { tags, articles, maxArticles } = this;
-    const identityMap = {};
+  getArticles() {
+    const { tags, articles, maxArticles } = this
+    const identityMap = {}
 
-    function getSlug (article) {
-      return article.slug;
+    function getSlug(article) {
+      return article.slug
     }
 
-    function addToMap (article) {
-      const slug = getSlug(article);
+    function addToMap(article) {
+      const slug = getSlug(article)
 
       if (!identityMap.hasOwnProperty(slug)) {
         identityMap[slug] = {
           article: article,
-          points: 0
+          points: 0,
         }
       }
     }
 
-    function addTagsPoints (article, tags) {
-      const tagPoint = 3;
-      const slug = getSlug(article);
-      
-      article.tags.forEach((aTag) => {
+    function addTagsPoints(article, tags) {
+      const tagPoint = 3
+      const slug = getSlug(article)
+
+      article.tags.forEach(aTag => {
         if (includes(tags, aTag)) {
-          identityMap[slug].points += tagPoint;
+          identityMap[slug].points += tagPoint
         }
       })
     }
 
-    function getIdentityMapAsArray () {
-      return Object.keys(identityMap).map((slug) => identityMap[slug]);
+    function getIdentityMapAsArray() {
+      return Object.keys(identityMap).map(slug => identityMap[slug])
     }
-    
+
     for (let article of articles) {
-      addToMap(article);
+      addToMap(article)
       addTagsPoints(article, tags)
     }
-    
-    const arrayIdentityMap = getIdentityMapAsArray();
-    const similarArticles = orderBy(arrayIdentityMap, ['points'], ['desc'])
-    return similarArticles.splice(0, maxArticles);
+
+    const arrayIdentityMap = getIdentityMapAsArray()
+    const similarArticles = orderBy(arrayIdentityMap, ["points"], ["desc"])
+    return similarArticles.splice(0, maxArticles)
   }
 }
 
-export default (props) => (
+export default props => (
   <StaticQuery
     query={graphql`
-      query SimilarArticles {    
+      query SimilarArticles {
         posts: allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: {frontmatter: {category: {eq: "release"}}}
+          filter: { frontmatter: { category: { eq: "release" } } }
         ) {
           edges {
             node {
@@ -103,31 +104,29 @@ export default (props) => (
       }
     `}
     render={data => {
-      const { releases, tags, currentArticleSlug } = props;
+      const { releases, tags, currentArticleSlug } = props
 
-      const articles = getPostsFromQuery(data.posts);
-      const similarArticles = new SimilarArticlesFactory(articles, currentArticleSlug)
+      const articles = getPostsFromQuery(data.posts)
+      const similarArticles = new SimilarArticlesFactory(
+        articles,
+        currentArticleSlug
+      )
         .setMaxArticles(releases)
         .setTags(tags)
         .getArticles()
 
-      return (
-        <SimilarArticlesComponent
-          articles={similarArticles}
-        />
-      )
+      return <SimilarArticlesComponent articles={similarArticles} />
     }}
   />
 )
 
-
 const SimilarArticlesComponent = ({ articles }) => (
   <section>
     <h1>Releases</h1>
-    <div className = "artist-release-card-container">
+    <div className="artist-release-card-container">
       {articles.map((article, i) => (
-        <ArtistReleaseCard {...article.article} key={i}/>
-      ))}    
+        <ArtistReleaseCard {...article.article} key={i} />
+      ))}
     </div>
   </section>
 )
