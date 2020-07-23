@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-import Scroll from "../components/backtotop"
+import Scroll from "../components/backToTop"
 
 const AboutPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
