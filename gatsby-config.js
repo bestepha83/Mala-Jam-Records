@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/artists`,
+        name: `releases`,
       },
     },
     {
@@ -27,9 +27,38 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/releases`,
+        name: `releases`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/news`,
+        name: `news`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+                width: 800,
+                ratio: 1.77, 
+                related: false,
+                noIframeBorder: true,
+                urlOverrides: [
+                  {
+                    id: 'youtube',
+                    embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
+                  }
+                ]
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -52,7 +81,50 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-remark-copy-linked-files`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-remark-videos`,
+      options: {
+        pipelines: [
+          {
+            name: 'vp9',
+            transcode: chain =>
+              chain
+                .videoCodec('libvpx-vp9')
+                .noAudio()
+                .outputOptions(['-crf 20', '-b:v 0']),
+            maxHeight: 480,
+            maxWidth: 900,
+            fileExtension: 'webm',
+          },
+          {
+            name: 'h264',
+            transcode: chain =>
+              chain
+                .videoCodec('libx264')
+                .noAudio()
+                .addOption('-profile:v', 'main')
+                .addOption('-pix_fmt', 'yuv420p')
+                .outputOptions(['-movflags faststart'])
+                .videoBitrate('1000k'),
+            maxHeight: 480,
+            maxWidth: 900,
+            fileExtension: 'mp4',
+          },
+        ],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-anchor-links`,
+      options: {
+        offset: -100
+      },
+    },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-postcss`,
@@ -68,18 +140,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true, // Print removed selectors and processed file names
-        // develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+        printRejected: true,
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-173302768-1`,
       },
     },
     `gatsby-plugin-feed`,
@@ -92,7 +159,6 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-netlify`,

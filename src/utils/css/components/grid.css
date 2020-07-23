@@ -22,7 +22,7 @@
 .col-10,
 .col-11,
 .col-12 {
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .col {
@@ -91,7 +91,7 @@
     max-width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .col-1,
     .col-2,
     .col-3,
@@ -108,7 +108,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .col-1,
     .col-2,
     .col-3,

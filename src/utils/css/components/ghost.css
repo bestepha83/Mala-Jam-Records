@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.kg-card figcaption {
+figcaption {
     padding: 1.5rem;
     font-size: 1.3rem;
     line-height: 1.4em;
@@ -26,6 +26,15 @@
     text-align: center;
     opacity: 0.4;
 }
+/* .kg-card figcaption {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: var(--color-base);
+    text-align: center;
+    opacity: 0.4;
+} */
 
 .kg-width-wide {
     position: relative;

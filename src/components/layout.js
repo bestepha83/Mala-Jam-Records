@@ -1,9 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import {
+  FaFacebookSquare, FaInstagram
+} from 'react-icons/fa';
 
 const Layout = props => {
-  const { title, children } = props
+  const { children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
+  const linkStyles = {
+    opacity: '0.4'
+  };
+  const activeStyles = {
+    opacity: 1
+  };
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -24,50 +45,89 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" class="site-head-left">
+          <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
+              <li className="nav-home" role="menuitem">
+                <Link 
+                  to={`/`}
+                  style = {linkStyles}
+                  activeStyle = {activeStyles}
+                  >
+                  Home
+                </Link>
               </li>
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+              <li className="nav-home" role="menuitem">
+                <Link 
+                  to={`/artists`}
+                  style = {linkStyles}
+                  activeStyle = {activeStyles}
+                  partiallyActive={true}
+                  >
+                  Artists
+                </Link>
               </li>
               <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
+                <Link 
+                  to={`/releases`}
+                  style = {linkStyles}
+                  activeStyle = {activeStyles}
+                  >
+                  Discography
+                </Link>
+              </li>
+              <li className="nav-elements" role="menuitem">
+                <Link 
+                  to={`/news`}
+                  style = {linkStyles}
+                  activeStyle = {activeStyles}
+                  >
+                  News
+                </Link>
+              </li>
+              <li className="nav-elements" role="menuitem">
+                <Link 
+                  to={`/about`}
+                  style = {linkStyles}
+                  activeStyle = {activeStyles}
+                  >
+                  About
+                </Link>
+              </li>
+              <li className="nav-elements" role="menuitem">
+              <Link 
+                to={`/contact`}
+                style = {linkStyles}
+                activeStyle = {activeStyles}
+                >
+                Contact
+                </Link>
               </li>
             </ul>
           </nav>
-          <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
+          <div className = "site-head-center">
+            <Img
+              fluid={data.logo.childImageSharp.fluid}
+              className="kg-image site-head-logo"
+            />          
           </div>
-          <div className="site-head-right">
-            <div className="social-links">
-              <a
-                href="https://www.facebook.com"
-                title="Facebook"
-                target="_blank"
+
+          <div className = "site-head-right">
+            <div className = "social-links">
+              <a 
+                href="https://www.facebook.com/Mala-Jam-Records-106976547742113/?modal=admin_todo_tour"
+                target="_blank" 
+                title="Facebook" 
                 rel="noopener noreferrer"
-              >
-                Facebook
+                >
+                <FaFacebookSquare />
               </a>
-              <a
-                href="https://twitter.com"
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
+              <a 
+                href="https://www.instagram.com/malajamrecords/"
+                target="_blank" 
+                title="Instagram" 
+                rel="noopener noreferrer">
+                <FaInstagram />
               </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
             </div>
           </div>
         </div>
@@ -77,17 +137,6 @@ const Layout = props => {
           {children}
         </div>
       </main>
-      <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built with{" "}
-        <a
-          href="https://gatsbyjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Gatsby
-        </a>
-      </footer>
     </div>
   )
 }
