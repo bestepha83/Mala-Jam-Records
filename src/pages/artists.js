@@ -29,7 +29,7 @@ const BlogIndex = ({ data }) => {
       />
 
       <section>
-        <Scroll showBelow={100} />
+        <Scroll showBelow={250} />
         <h2 className="page-title">Artists</h2>
         <div className="artist-feed">
           {artists.map(({ node }) => {
