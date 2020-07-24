@@ -2,7 +2,7 @@
 category: artist
 title: Susie McCollum
 artist: Susie
-date: "2020-07-12"
+date: "2017-07-12"
 description: A clever and uninhibited twist on coffee house pop
 thumbnail: ./susie-2.png
 facebook:

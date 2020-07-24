@@ -1,7 +1,7 @@
 ---
 category: artist
 title: Stray Roses
-date: "2020-04-09"
+date: "2014-04-09"
 thumbnail: ./stray-roses-4.jpg
 description: A unique blend of alternative, pop, and rock that speaks to the soul
 facebook:

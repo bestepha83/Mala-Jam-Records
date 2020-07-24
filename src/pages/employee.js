@@ -347,11 +347,12 @@ const AboutPage = ({ data }) => {
                 <h4>Isabella Crier</h4>
                 <h6>Violin</h6>
                 <p>
-                  Isabella Crier is a violinist out of Madison, Wisconsin. Her
+                  Isabelle Krier is a violinist out of Madison, Wisconsin. Her
                   musical ability led her to stay in her hometown to pursue a BM
-                  in Violin performance under a full ride scholarship. After
-                  winning a couple concerto competitions she has been focused on
-                  ensemble and recorded playing.
+                  in Violin performance under a full ride scholarship as well as
+                  majoring in Biology. After winning a couple concerto
+                  competitions she has been focused on ensemble and recorded
+                  playing for various genres.
                 </p>
               </div>
             </div>
