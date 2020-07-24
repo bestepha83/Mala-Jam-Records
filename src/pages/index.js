@@ -25,11 +25,17 @@ const BlogIndex = ({ data }) => {
           `la record label`,
         ]}
       />
-
+      <video
+        className="video-player"
+        // width="100%"
+        height="100%"
+        loop
+        muted
+        autoPlay
+      >
+        <source src={BannerVideo} type="video/mp4" />
+      </video>
       <header className="page-head">
-        <video className="video-player" loop muted autoPlay>
-          <source src={BannerVideo} type="video/mp4" />
-        </video>
         <h1>Mala Jam Records</h1>
         <h2 className="page-head-title">
           {data.site.siteMetadata.description}

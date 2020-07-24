@@ -96,10 +96,9 @@ body {
   }
 }
 
-.home-banner header {
-  max-width: 100%;
+.page-head {
+  width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 .page-head {
@@ -119,6 +118,9 @@ body {
 .page-head .button {
   margin: 20px;
   animation: fadeIn 2.1s;
+}
+.home-banner video {
+  position: absolute;
 }
 
 .error-head {
@@ -169,6 +171,9 @@ body {
   line-height: 1.35em;
 }
 @media (max-width: 500px) {
+  .home-banner video {
+    display: none;
+  }
   .page-head-description {
     font-size: 1.6rem;
   }
