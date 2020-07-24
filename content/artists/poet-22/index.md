@@ -1,7 +1,7 @@
 ---
 category: artist
 title: poet22
-date: "2020-05-13"
+date: "2020-08-13"
 description: A longing voice creating a new sound of neo soul RnB
 thumbnail: ./kala-1.JPG
 facebook:

@@ -145,45 +145,9 @@ const AboutPage = ({ data }) => {
                 </p>
               </div>
             </div>
-            <div className="team-row">
-              <figure className="kg-image-card team-col-4">
-                <Img
-                  fluid={data.sarah.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
-              <div className="team-col-8">
-                <h4>Jackson Prestley</h4>
-                <h6>Accounting Department</h6>
-                <p>
-                  London comes with photo-centric main layout best suited to
-                  photography, graphics portfolios and other image-heavy uses.
-                  London comes with photo-centric main layout best suited to
-                  photography, graphics portfolios and other image-heavy uses.
-                </p>
-              </div>
-            </div>
           </div>
           <div className="visual-artist-team" id="visual">
             <h3>Visual Artists</h3>
-            <div className="team-row">
-              <figure className="kg-image-card team-col-4">
-                <Img
-                  fluid={data.sarah.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
-              <div className="team-col-8">
-                <h4>Annah Holmes</h4>
-                <h6>Digital Media Director</h6>
-                <p>
-                  London comes with photo-centric main layout best suited to
-                  photography, graphics portfolios and other image-heavy uses.
-                  London comes with photo-centric main layout best suited to
-                  photography, graphics portfolios and other image-heavy uses.
-                </p>
-              </div>
-            </div>
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
@@ -422,7 +386,7 @@ const AboutPage = ({ data }) => {
               </figure>
               <div className="team-col-8">
                 <h4>Henry Ptacek</h4>
-                <h6>Drums, Percussion</h6>
+                <h6>Drums, Percussion, Producer</h6>
                 <p>
                   Henry Ptacek has always been innately drawn to rhythm. He
                   practices a wide range of percussion playing, from Western
@@ -445,7 +409,7 @@ const AboutPage = ({ data }) => {
               </figure>
               <div className="team-col-8">
                 <h4>Jack Cain</h4>
-                <h6>Vocals</h6>
+                <h6>Vocals, Songwriter, Producer</h6>
                 <p>
                   Jack combines poetry, vocal techniques from his musical
                   theatre background, and his passion for rock and pop music to

@@ -2,7 +2,7 @@
 
 category: artist
 title: Untitled Project Featuring Jack and Henry
-date: "2020-05-06"
+date: "2020-01-06"
 description:
 thumbnail: ./jack-henry.png
 facebook:
