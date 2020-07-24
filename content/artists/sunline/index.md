@@ -2,16 +2,17 @@
 category: artist
 title: Sunline
 date: "2020-05-05"
-description: ''
+description: the soul of soul
 thumbnail: ./sunline.jpg
-facebook: 
-instagram: 
+facebook:
+instagram:
 spotify:
-youtube: 
+youtube:
 soundcloud:
-tags: ['sunline']
-releases: 
-
+tags: ["sunline"]
+releases:
 ---
+
+Inspired by the grooves of Motown, the rhythms of disco, and the soul of soul, Sun Line brings together a variety of genres and styles to create something unique and exciting to listen to. Up and coming in the Madison area, the band features the young talents of Charlie Palm on bass and vocals, Max Newcomer on keyboards, Dante Turkow on guitar, and Henry Ptacek on drums to create a brand new sound: influenced, but far from derivative of, both modern indie such as Fat Night, Sure Sure, Sleepwalkers, and Boy Pablo and golden age pop, like Stevie Wonder, Earth Wind and Fire, and the Jackson Five.
 
 `video: https://www.youtube.com/watch?v=5ja4hHUpNMw&feature=youtu.be`

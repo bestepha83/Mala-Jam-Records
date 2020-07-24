@@ -93,7 +93,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.ben.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -303,7 +303,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.ben.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -470,6 +470,13 @@ const indexQuery = graphql`
       }
     }
     sarah: file(relativePath: { eq: "sarah.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ben: file(relativePath: { eq: "ben.png" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
