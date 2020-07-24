@@ -1,7 +1,7 @@
 ---
 category: news
 title: Mala Jam Records Launches!
-date: "2020-07-24"
+date: "2020-07-23"
 thumbnail1: ./bg.jpg
 thumbnail2: ./logo.png
 description: We are proud to annouce the launch of Mala Jam Records!
