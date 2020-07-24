@@ -66,7 +66,7 @@ const AboutPage = ({ data }) => {
               </figure>
               <div className="team-col-8">
                 <h4>Jack Cain</h4>
-                <h6>Partner</h6>
+                <h6>Partner and Songwriter</h6>
                 <p>
                   Jack Cain is a man of many passions. As a music producer,
                   musician, actor, and songwriter, he is ecstatic to bring his
