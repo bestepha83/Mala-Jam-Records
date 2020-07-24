@@ -67,7 +67,19 @@ const AboutPage = ({ data }) => {
               <div className="team-col-8">
                 <h4>Jack Cain</h4>
                 <h6>Partner</h6>
-                <p></p>
+                <p>
+                  Jack Cain is a man of many passions. As a music producer,
+                  musician, actor, and songwriter, he is ecstatic to bring his
+                  experience in the arts to the musicians he works with. First
+                  beginning his artistic development as a toddler on stage, he
+                  is currently studying in a rigorous acting program at The
+                  University of Southern California. Jack firmly believes that
+                  the arts are interconnected, and when creators explore other
+                  mediums or ways to express themselves, all of their art is
+                  enhanced. Fascinated by the process of perpetual learning, no
+                  challenge is too great as he strives to make beautiful music
+                  and lasting art.
+                </p>
               </div>
             </div>
             <div className="team-row">
