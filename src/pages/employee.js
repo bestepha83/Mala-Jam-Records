@@ -43,14 +43,14 @@ const AboutPage = ({ data }) => {
                 <h4>Henry Ptacek</h4>
                 <h6>Founder, Partner</h6>
                 <p>
-                  Henry Ptacek is a music producer, musician and industrial
-                  thinker. With his past musical projects Henry has found a
-                  common theme; deep longing for diversity and artistic
-                  connection. Henry wants to make great music, music that is
+                  Henry Ptacek is a music producer, musician, and industrial
+                  thinker. With his past musical projects, Henry has found a
+                  common theme: deep longing for diversity and artistic
+                  connection. Henry wants to make great music; music that is
                   intrinsically beautiful no matter the genre. Because of this
-                  desire he began to realize that record labels are meant to put
-                  out good records. That is what Mala Jam, to its core, is
-                  about; creating good music. Henry has become obsessed with the
+                  desire, he began to realize that record labels are meant to
+                  put out good records. That is what Mala Jam, to its core, is
+                  about- creating good music. Henry has become obsessed with the
                   full range of music production in order to create work that
                   can be artistically competitive with any music.
                 </p>
@@ -93,7 +93,7 @@ const AboutPage = ({ data }) => {
                 <h6>CFO</h6>
                 <p>
                   Drawn to Jack and Henry’s passion for producing music, Sarah
-                  was one of the first members to join the Malajams team. Sarah
+                  was one of the first members to join the Mala Jams team. Sarah
                   has previously worked on many small business projects,
                   focusing on improving marketing and efficiency. She currently
                   runs her own sustainable shopping platform and a photography
@@ -135,12 +135,11 @@ const AboutPage = ({ data }) => {
                   California, which has nourished his love for music through
                   being involved with the Los Angeles art scene. Daniel has
                   taken advantage of the robust art scene at USC by studying the
-                  Music Industry with his time there. In addition to Daniel’s
-                  new home, he also enjoys managing a band out of Appleton,
-                  Wisconsin called The Accords. He has booked countless shows in
-                  venues across the midwest. Some of his musical inspirations
-                  include John Mayer, The Grateful Dead, Miles Davis, and Roy
-                  Hargrove.
+                  Music Industry. In addition to Daniel’s new home, he also
+                  enjoys managing a band out of Appleton, Wisconsin called The
+                  Accords. He has booked countless shows in venues across the
+                  Midwest. Some of his musical inspirations include John Mayer,
+                  The Grateful Dead, Miles Davis, and Roy Hargrove.
                 </p>
               </div>
             </div>
@@ -241,10 +240,10 @@ const AboutPage = ({ data }) => {
                 <h6>Drums, Percussion, Songwriter, Producer</h6>
                 <p>
                   Henry Ptacek has always been innately drawn to rhythm. He
-                  practices a wide range of percussion playing, from Western
+                  practices a wide range of percussion styles, from Western
                   classical percussion such as mallet and orchestral playing, to
                   the rhythms of Brazil and Carnival, and even to the religious
-                  music of Santeria or the Black American music Jazz. Beyond
+                  music of Santeria or the Black American music jazz. Beyond
                   learning more of his craft, Henry has been recording drums and
                   songwriting in his home studio for the past year. Above all
                   else, Henry loves to see his instrument make a song burst with
@@ -282,13 +281,13 @@ const AboutPage = ({ data }) => {
                 <h4>Tony Kreuger</h4>
                 <h6>Head Producer</h6>
                 <p>
-                  Tony Kreuger, or The Missing Link is a music producer and
-                  audio engineer working in Wisconsin. Best known for his
+                  Tony Kreuger, or The Missing Link, is a music producer and
+                  audio engineer working in Wisconsin, best known for his
                   production in collaboration with the lightly esteemed GCP
                   Spittas hip hop collective. While specializing in rap vocals
                   and beat making, Link also mixes songs within various other
                   genres. Link's background in percussion and music theory
-                  contributes to his production which is ultimately inspired by
+                  contributes to his production, which is ultimately inspired by
                   his passion for 19th century architecture.
                 </p>
               </div>
@@ -304,15 +303,15 @@ const AboutPage = ({ data }) => {
                 <h4>Danny Lopez</h4>
                 <h6>Guitarist</h6>
                 <p>
-                  Danny Lopez is a Chicago born guitarist who specializes in the
+                  Danny Lopez is a Chicago-born guitarist who specializes in the
                   soul/jazz/blues/funk world. Danny keeps himself connected to
                   the music scene of the Fox Valley playing gigs and writing
                   music with many. Danny started playing at the age of 13 with
-                  his middle school jazz band; later he would join bands such as
-                  Minus On, and become poet22 accompanied guitarist for live
-                  shows. With a deep love for pocket playing and rhythmic
-                  mastery he is the ideal rhythm guitarist. Not to mention his
-                  many years of playing jazz has lent to an amazing soloing
+                  his middle school jazz band. Later he would join bands such as
+                  Minus One, and be the accompanist guitarist for live shows of
+                  Poet22. With a deep love for pocket playing and rhythmic
+                  mastery, he is the ideal rhythm guitarist. Not to mention his
+                  many years of playing jazz have lent to an amazing soloing
                   ability.
                 </p>
               </div>
@@ -347,12 +346,13 @@ const AboutPage = ({ data }) => {
                 <h6>Bass</h6>
                 <p>
                   Jando Valdez began playing bass in high school and hasn't
-                  turned back. Originally a percussionist he is very connected
-                  to groove and rhythm, which is very important for the bass.
-                  Inspired by bassist such as Flea of the Red Hot Chilly Peppers
-                  Jando began playing all types of music, jazz and rock. Jando
-                  is starting his journey at the Lawrence Conservatory of Music
-                  this year as a Jazz Bass performance major.
+                  turned back. Originally a percussionist, he is very connected
+                  to groove and rhythm, which is essential for the bass.
+                  Inspired by bassists such as Flea of the Red Hot Chili
+                  Peppers, Jando began playing all types of music, especially
+                  jazz and rock. Jando is starting his journey at the Lawrence
+                  Conservatory of Music this year as a Jazz Bass performance
+                  major.
                 </p>
               </div>
             </div>
@@ -367,20 +367,20 @@ const AboutPage = ({ data }) => {
                 <h4>Charlie Palm</h4>
                 <h6>Trumpet, Bass, Piano</h6>
                 <p>
-                  Charlie Palm is a jazz player, but his music making doesn't
-                  stop there. With a deep knowledge for jazz theory he is able
+                  Charlie Palm is a jazz player, but his music-making doesn't
+                  stop there. With a deep knowledge for jazz theory, he is able
                   to create stunning solos as well as thoughtful tunes. His
                   primary instrument is the trumpet, for which he is receiving a
-                  full ride to study at Madison. In addition to the trumpet he
+                  full ride to study at Madison. In addition to the trumpet, he
                   plays the bass and piano beautifully and with a depth of
-                  knowledge in not only notes but feeling.
+                  knowledge in not only notes but feelings as well.
                 </p>
               </div>
             </div>
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.isabella.childImageSharp.fluid}
+                  fluid={data.isabella2.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -388,12 +388,11 @@ const AboutPage = ({ data }) => {
                 <h4>Isabella Crier</h4>
                 <h6>Violin</h6>
                 <p>
-                  Isabelle Krier is a violinist out of Madison, Wisconsin. Her
+                  Isabella Crier is a violinist out of Madison, Wisconsin. Her
                   musical ability led her to stay in her hometown to pursue a BM
-                  in Violin performance under a full ride scholarship as well as
-                  majoring in Biology. After winning a couple concerto
-                  competitions she has been focused on ensemble and recorded
-                  playing for various genres.
+                  in Violin Performance under a full ride scholarship. After
+                  winning a couple concerto competitions, she has been focused
+                  on ensemble and recorded playing.
                 </p>
               </div>
             </div>
@@ -408,13 +407,14 @@ const AboutPage = ({ data }) => {
                 <h4>Meredith Neisbit</h4>
                 <h6>Bass, Cello</h6>
                 <p>
-                  Meredith Nesbitt is an acoustic and electric bassist and
-                  cellist. She has studied under a variety of teachers including
-                  Uri Vardi, Nick Moran, Hana John Taylor and John Christensen.
-                  Originally classically trained, she now spans a variety of
-                  styles including free and straight ahead jazz, rock, folk and
-                  Afrocuban. She draws inspiration from Fred Hopkins and Tomeka
-                  Reid to Cachaito and Andy Shauf, to name a few.
+                  Meredith Neisbit has always been a string player, but it
+                  wasn’t always the bass. Originally studying the cello, she
+                  decided to change instruments after she found herself
+                  increasingly involved in the Madison jazz scene. Inspired by
+                  the uplifting qualities of free jazz and drawn to the beauty
+                  of harmony, her playing abilities are vast. Meredith has the
+                  ability to play beautiful classical cello and bass as well as
+                  jazz and groove-based music on the upright and electric bass.
                 </p>
               </div>
             </div>
@@ -510,6 +510,13 @@ const indexQuery = graphql`
       }
     }
     jando: file(relativePath: { eq: "jando.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    isabella2: file(relativePath: { eq: "isabella-2.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid

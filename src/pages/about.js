@@ -48,10 +48,10 @@ const AboutPage = ({ data }) => {
                 producing records. As students of art all their lives, Jack and
                 Henry have a deep and ever expanding passion for
                 interdisciplinary art. The pair is focused on curating and
-                creating great music and they believe in what they work on every
-                step of the way. Mala Jam works with artists who have something
-                to say, and the team hopes to make the process of expression as
-                beautiful and easy as possible.
+                creating great music, and they believe in what they work on
+                every step of the way. Mala Jam works with artists who have
+                something to say, and the team hopes to make the process of
+                expression as beautiful and easy as possible.
               </p>
               <h4>The Beginning</h4>
               <p>
@@ -59,7 +59,7 @@ const AboutPage = ({ data }) => {
                 wonderful web of artistry they found themselves intertwined in,
                 something that is exceedingly rare and incredibly exciting. Now
                 the concept of Mala Jam permeates beyond making hits and into
-                creating a community of like minded artists hungry for creating
+                creating a community of like-minded artists hungry for creating
                 amazing work.
               </p>
             </div>

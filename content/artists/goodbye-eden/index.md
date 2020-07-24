@@ -27,7 +27,7 @@ The band is currently working on their second album and focusing on discovering 
 
 ![Jack Cain](./jack.jpg)
 
-<h6>Jack Cain - Voice, Whistling and Guitar</h6>
+<h6>Jack Cain - Voice, Whistling, and Guitar</h6>
 
 ![Jando Valdez](./jando.jpg)
 

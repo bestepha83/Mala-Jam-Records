@@ -16,7 +16,7 @@ releases:
 
 A New York City-based singer/songwriter, Susie McCollum's style is not quite folk and not quite pop. Her style is unique, and that's how she likes it.
 
-Blending her playful yet mature view of the world through poetry and a powerful voice,her music speaks to the intricacies of relationships and the complexity of the human experience.
+Blending her playful yet mature view of the world through poetry and a powerful voice, her music speaks to the intricacies of relationships and the complexity of the human experience.
 
 ![Susie](./susie-1.jpg)
 

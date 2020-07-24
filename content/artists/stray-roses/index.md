@@ -13,7 +13,7 @@ tags: ["stray roses"]
 releases:
 ---
 
-Stray Roses is an artistic power duo based in LA, whose sound is a touching combination of mainly indie/alternative, but definitely one of its own.
+Stray Roses is an artistic power duo based in LA, whose sound is a touching combination of mainly indie/alternative, but definitely one of its own making.
 
 ![Stray Roses](./stray-roses-2.png)
 
