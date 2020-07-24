@@ -14,4 +14,5 @@ tags: ["jack n henry"]
 releases:
 ---Like having a deep talk with your best friend
 
-![jack and henry](./jack-henry.png)
+![jack and henry](./JH2.png)
+![jack and henry](./JH3.png)
