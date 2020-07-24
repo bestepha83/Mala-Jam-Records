@@ -1,7 +1,7 @@
 ---
 category: artist
 title: Untitled Project by Jack and Henry
-date: "2012-02-07"
+date: "2010-02-07"
 description: Like having a deep talk with your best friend
 thumbnail: ./jack-henry-artist.png
 facebook:

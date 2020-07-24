@@ -30,7 +30,7 @@ const AboutPage = ({ data }) => {
       <article className="about page-template no-image" id="top">
         <Scroll showBelow={250} />
         <div className="post-content-body">
-          <h2 className="page-title">About Malajam Records</h2>
+          <h2 className="page-title">About Mala Jam Records</h2>
 
           <div className="main-about ">
             <div>
@@ -69,7 +69,7 @@ const AboutPage = ({ data }) => {
             <div className="col-6">
               <h5>Our Mission</h5>
               <p>
-                Malajam Records is an independent record label dedicated to
+                Mala Jam Records is an independent record label dedicated to
                 promoting artists. Our mission is to create a community
                 dedicated to artist development and success.
               </p>
