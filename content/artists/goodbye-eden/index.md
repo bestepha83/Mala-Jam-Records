@@ -16,8 +16,7 @@ releases: 2
 
 Goodbye Eden is an indie rock band given life from the suburbs of Wisconsin. Consisting of members based across the US from Los Angeles, CA to Wisconsin, these fellas get together when they can to whip up some sweet sweet jams. Coming from a variety of musical backgrounds such as jazz, mariachi, classical, funk, rock, and musical theatre, their sound is an amalgamation of each member’s ideas and experiences. Each member of GBE has a wide variety of talents, passions, and interests, giving them opportunities to discover new elements for their creative process.
 
-![Goodbye Eden](./GBE-3.jpeg)
-
+![Goodbye Eden](./GBE-3.png
 In middle school, Jack (vocals/rhythm guitar), Henry (drums/percussion), and Jando (bass) met and became friends while sharing their interest in music and the arts. This shared interest blossomed into a jazz combo, The Minus One Quartet. As they matured, their music transformed to serve the three of them, transitioning their focus to a rock inspired group. The band learned and grew together musically throughout their first two years of high school, playing with an abundance of temporary members but never focusing on writing their own music.
 
 ![Goodbye Eden](./GBE.jpg)
