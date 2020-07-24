@@ -35,11 +35,11 @@ const ContactPage = ({ data }) => {
             </p>
             <p>For demo submissions, please include a file or link.</p>
           </div>
-          <div className="row">
+          <div className="row contact-content">
             <div className="col-6">
               <figure className="kg-image-card">
                 <Img
-                  fluid={data.mainAbout.childImageSharp.fluid}
+                  fluid={data.contact.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -116,7 +116,7 @@ const indexQuery = graphql`
         title
       }
     }
-    mainAbout: file(relativePath: { eq: "GBE.jpg" }) {
+    contact: file(relativePath: { eq: "contact.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid

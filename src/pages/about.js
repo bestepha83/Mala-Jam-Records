@@ -36,7 +36,7 @@ const AboutPage = ({ data }) => {
             <div>
               <figure className="kg-image-card">
                 <Img
-                  fluid={data.mainAbout.childImageSharp.fluid}
+                  fluid={data.jackhenry1.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -53,18 +53,6 @@ const AboutPage = ({ data }) => {
                 to say, and the team hopes to make the process of expression as
                 beautiful and easy as possible.
               </p>
-            </div>
-          </div>
-          <div className="main-about">
-            <div>
-              <figure className="kg-image-card">
-                <Img
-                  fluid={data.mainAbout.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
-            </div>
-            <div className="main-about-content">
               <h4>The Beginning</h4>
               <p>
                 As the project evolved, the pair began to understand the
@@ -118,12 +106,7 @@ const AboutPage = ({ data }) => {
           <h2>Meet The Team!</h2>
           <div className="team-cards">
             <div className="team-card">
-              <figure className="kg-image-card">
-                <Img
-                  fluid={data.mainAbout.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
+              <div className="pink-card-box"></div>
               <h6>Label Executives</h6>
               <p>Top dogs. They run this shit.</p>
               <AnchorLink
@@ -134,12 +117,7 @@ const AboutPage = ({ data }) => {
               </AnchorLink>
             </div>
             <div className="team-card">
-              <figure className="kg-image-card">
-                <Img
-                  fluid={data.mainAbout.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
+              <div className="black-card-box"></div>
               <h6>Visual Artists</h6>
               <p>For all your visual needs.</p>
               <AnchorLink
@@ -150,12 +128,7 @@ const AboutPage = ({ data }) => {
               </AnchorLink>
             </div>
             <div className="team-card">
-              <figure className="kg-image-card">
-                <Img
-                  fluid={data.mainAbout.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
+              <div className="purple-card-box"></div>
               <h6>The Studio</h6>
               <p>They make the magic happen.</p>
               <AnchorLink
@@ -179,7 +152,7 @@ const indexQuery = graphql`
         title
       }
     }
-    mainAbout: file(relativePath: { eq: "GBE.jpg" }) {
+    jackhenry1: file(relativePath: { eq: "jack-henry-1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
