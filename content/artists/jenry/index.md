@@ -12,5 +12,4 @@ soundcloud:
 tags: ["jack and henry"]
 ---
 
-![Jack and Henry](./JH2.png)
 ![Jack and Henry](./JH3.jpg)

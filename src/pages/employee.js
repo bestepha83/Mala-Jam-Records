@@ -1,14 +1,13 @@
 import React from "react"
+import Layout from "../components/layout"
+import Scroll from "../components/backToTop"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-
-import Scroll from "../components/backToTop"
 
 const AboutPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -233,6 +232,48 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
+                  fluid={data.henry.childImageSharp.fluid}
+                  className="kg-image"
+                />
+              </figure>
+              <div className="team-col-8">
+                <h4>Henry Ptacek</h4>
+                <h6>Drums, Percussion, Songwriter, Producer</h6>
+                <p>
+                  Henry Ptacek has always been innately drawn to rhythm. He
+                  practices a wide range of percussion playing, from Western
+                  classical percussion such as mallet and orchestral playing, to
+                  the rhythms of Brazil and Carnival, and even to the religious
+                  music of Santeria or the Black American music Jazz. Beyond
+                  learning more of his craft, Henry has been recording drums and
+                  songwriting in his home studio for the past year. Above all
+                  else, Henry loves to see his instrument make a song burst with
+                  feeling.
+                </p>
+              </div>
+            </div>
+            <div className="team-row">
+              <figure className="kg-image-card team-col-4">
+                <Img
+                  fluid={data.jack.childImageSharp.fluid}
+                  className="kg-image"
+                />
+              </figure>
+              <div className="team-col-8">
+                <h4>Jack Cain</h4>
+                <h6>Vocals, Songwriter, Producer</h6>
+                <p>
+                  Jack combines poetry, vocal techniques from his musical
+                  theatre background, and his passion for rock, pop, and jazz
+                  music to create an intoxicating vocal expression and power. As
+                  an actor, his ability to delicately convey emotion through
+                  spoken or sung word can liven lyrics and enhance melodies.
+                </p>
+              </div>
+            </div>
+            <div className="team-row">
+              <figure className="kg-image-card team-col-4">
+                <Img
                   fluid={data.tony.childImageSharp.fluid}
                   className="kg-image"
                 />
@@ -359,7 +400,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.meredith.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -367,56 +408,13 @@ const AboutPage = ({ data }) => {
                 <h4>Meredith Neisbit</h4>
                 <h6>Bass, Cello</h6>
                 <p>
-                  Meredith Neisbit has always been a string player, but it
-                  wasn’t always the bass. Originally studying the cello she
-                  decided to change instruments after she found herself
-                  increasingly involved in the Madison jazz scene. Inspired by
-                  the uplifting qualities of free jazz and drawn to the beauty
-                  of harmony her playing abilities are vast. Meredith has the
-                  ability to play beautiful classical cello and bass as well as
-                  jazz and groove based music on the upright and electric bass.
-                </p>
-              </div>
-            </div>
-            <div className="team-row">
-              <figure className="kg-image-card team-col-4">
-                <Img
-                  fluid={data.henry.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
-              <div className="team-col-8">
-                <h4>Henry Ptacek</h4>
-                <h6>Drums, Percussion, Songwriter, Producer</h6>
-                <p>
-                  Henry Ptacek has always been innately drawn to rhythm. He
-                  practices a wide range of percussion playing, from Western
-                  classical percussion such as mallet and orchestral playing, to
-                  the rhythms of Brazil and Carnival, and even to the religious
-                  music of Santeria or the Black American music Jazz. Beyond
-                  learning more of his craft, Henry has been recording drums and
-                  songwriting in his home studio for the past year. Above all
-                  else, Henry loves to see his instrument make a song burst with
-                  feeling.
-                </p>
-              </div>
-            </div>
-            <div className="team-row">
-              <figure className="kg-image-card team-col-4">
-                <Img
-                  fluid={data.jack.childImageSharp.fluid}
-                  className="kg-image"
-                />
-              </figure>
-              <div className="team-col-8">
-                <h4>Jack Cain</h4>
-                <h6>Vocals, Songwriter, Producer</h6>
-                <p>
-                  Jack combines poetry, vocal techniques from his musical
-                  theatre background, and his passion for rock, pop, and jazz
-                  music to create an intoxicating vocal expression and power. As
-                  an actor, his ability to delicately convey emotion through
-                  spoken or sung word can liven lyrics and enhance melodies.
+                  Meredith Nesbitt is an acoustic and electric bassist and
+                  cellist. She has studied under a variety of teachers including
+                  Uri Vardi, Nick Moran, Hana John Taylor and John Christensen.
+                  Originally classically trained, she now spans a variety of
+                  styles including free and straight ahead jazz, rock, folk and
+                  Afrocuban. She draws inspiration from Fred Hopkins and Tomeka
+                  Reid to Cachaito and Andy Shauf, to name a few.
                 </p>
               </div>
             </div>
@@ -512,6 +510,13 @@ const indexQuery = graphql`
       }
     }
     jando: file(relativePath: { eq: "jando.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    meredith: file(relativePath: { eq: "meredith.PNG" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
