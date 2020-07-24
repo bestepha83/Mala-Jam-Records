@@ -374,22 +374,6 @@ body {
   width: 100%;
 }
 
-.pink-card-box {
-  height: 29rem;
-  width: 100%;
-  background-color: var(--color-primary);
-}
-.black-card-box {
-  height: 29rem;
-  width: 100%;
-  background-color: var(--color-base);
-}
-.purple-card-box {
-  height: 29rem;
-  width: 100%;
-  background-color: rgb(195, 154, 213);
-}
-
 @media (max-width: 1100px) {
   .team-cards {
     width: 90%;

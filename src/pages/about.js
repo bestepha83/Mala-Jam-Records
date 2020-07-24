@@ -106,7 +106,12 @@ const AboutPage = ({ data }) => {
           <h2>Meet The Team!</h2>
           <div className="team-cards">
             <div className="team-card">
-              <div className="pink-card-box"></div>
+              <figure className="kg-image-card">
+                <Img
+                  fluid={data.executives.childImageSharp.fluid}
+                  className="kg-image"
+                />
+              </figure>
               <h6>Label Executives</h6>
               <p>Top dogs. They run this shit.</p>
               <AnchorLink
@@ -117,7 +122,12 @@ const AboutPage = ({ data }) => {
               </AnchorLink>
             </div>
             <div className="team-card">
-              <div className="black-card-box"></div>
+              <figure className="kg-image-card">
+                <Img
+                  fluid={data.visual.childImageSharp.fluid}
+                  className="kg-image"
+                />
+              </figure>
               <h6>Visual Artists</h6>
               <p>For all your visual needs.</p>
               <AnchorLink
@@ -128,7 +138,12 @@ const AboutPage = ({ data }) => {
               </AnchorLink>
             </div>
             <div className="team-card">
-              <div className="purple-card-box"></div>
+              <figure className="kg-image-card">
+                <Img
+                  fluid={data.studio.childImageSharp.fluid}
+                  className="kg-image"
+                />
+              </figure>
               <h6>The Studio</h6>
               <p>They make the magic happen.</p>
               <AnchorLink
@@ -153,6 +168,27 @@ const indexQuery = graphql`
       }
     }
     jackhenry1: file(relativePath: { eq: "jack-henry-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    executives: file(relativePath: { eq: "label-executives.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    visual: file(relativePath: { eq: "visual-artists-graphic.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    studio: file(relativePath: { eq: "the-studio-graphic.png" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
