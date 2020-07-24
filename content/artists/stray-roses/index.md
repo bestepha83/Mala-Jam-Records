@@ -5,7 +5,7 @@ date: "2014-04-09"
 thumbnail: ./stray-roses-4.jpg
 description: A unique blend of alternative, pop, and rock that speaks to the soul
 facebook:
-instagram:
+instagram: https://www.instagram.com/stray_roses/
 spotify:
 youtube:
 soundcloud:

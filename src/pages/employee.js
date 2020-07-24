@@ -318,7 +318,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.charlie.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -413,8 +413,10 @@ const AboutPage = ({ data }) => {
                 <h6>Vocals, Songwriter, Producer</h6>
                 <p>
                   Jack combines poetry, vocal techniques from his musical
-                  theatre background, and his passion for rock and pop music to
-                  create an intoxicating vocal expression and power.
+                  theatre background, and his passion for rock, pop, and jazz
+                  music to create an intoxicating vocal expression and power. As
+                  an actor, his ability to delicately convey emotion through
+                  spoken or sung word can liven lyrics and enhance melodies.
                 </p>
               </div>
             </div>
@@ -489,6 +491,13 @@ const indexQuery = graphql`
       }
     }
     tony: file(relativePath: { eq: "tony.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    charlie: file(relativePath: { eq: "charlie.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid

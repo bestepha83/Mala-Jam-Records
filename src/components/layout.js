@@ -1,19 +1,17 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import {
-  FaFacebookSquare, FaInstagram
-} from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 
 const Layout = props => {
   const { children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
   const linkStyles = {
-    opacity: '0.4'
-  };
+    opacity: "0.4",
+  }
   const activeStyles = {
-    opacity: 1
-  };
+    opacity: 1,
+  }
   const data = useStaticQuery(graphql`
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
@@ -37,7 +35,6 @@ const Layout = props => {
             <div
               className="hamburger hamburger--collapse"
               aria-label="Menu"
-              role="button"
               aria-controls="navigation"
             >
               <div className="hamburger-box">
@@ -46,86 +43,83 @@ const Layout = props => {
             </div>
           </a>
           <nav id="swup" className="site-head-left">
-            <ul className="nav" role="menu">
-              <li className="nav-home" role="menuitem">
-                <Link 
-                  to={`/`}
-                  style = {linkStyles}
-                  activeStyle = {activeStyles}
-                  >
+            <ul className="nav">
+              <li className="nav-home">
+                <Link to={`/`} style={linkStyles} activeStyle={activeStyles}>
                   Home
                 </Link>
               </li>
-              <li className="nav-home" role="menuitem">
-                <Link 
+              <li className="nav-home">
+                <Link
                   to={`/artists`}
-                  style = {linkStyles}
-                  activeStyle = {activeStyles}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
                   partiallyActive={true}
-                  >
+                >
                   Artists
                 </Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link 
+              <li className="nav-elements">
+                <Link
                   to={`/releases`}
-                  style = {linkStyles}
-                  activeStyle = {activeStyles}
-                  >
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
                   Discography
                 </Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link 
+              <li className="nav-elements">
+                <Link
                   to={`/news`}
-                  style = {linkStyles}
-                  activeStyle = {activeStyles}
-                  >
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
                   News
                 </Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-                <Link 
+              <li className="nav-elements">
+                <Link
                   to={`/about`}
-                  style = {linkStyles}
-                  activeStyle = {activeStyles}
-                  >
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
                   About
                 </Link>
               </li>
-              <li className="nav-elements" role="menuitem">
-              <Link 
-                to={`/contact`}
-                style = {linkStyles}
-                activeStyle = {activeStyles}
+              <li className="nav-elements">
+                <Link
+                  to={`/contact`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
                 >
-                Contact
+                  Contact
                 </Link>
               </li>
             </ul>
           </nav>
-          <div className = "site-head-center">
+          <div className="site-head-center">
             <Img
               fluid={data.logo.childImageSharp.fluid}
               className="kg-image site-head-logo"
-            />          
+            />
           </div>
 
-          <div className = "site-head-right">
-            <div className = "social-links">
-              <a 
+          <div className="site-head-right">
+            <div className="social-links">
+              <a
                 href="https://www.facebook.com/Mala-Jam-Records-106976547742113/?modal=admin_todo_tour"
-                target="_blank" 
-                title="Facebook" 
+                target="_blank"
+                title="Facebook"
                 rel="noopener noreferrer"
-                >
+              >
                 <FaFacebookSquare />
               </a>
-              <a 
+              <a
                 href="https://www.instagram.com/malajamrecords/"
-                target="_blank" 
-                title="Instagram" 
-                rel="noopener noreferrer">
+                target="_blank"
+                title="Instagram"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram />
               </a>
             </div>
