@@ -187,7 +187,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.isabella.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -227,7 +227,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.elaina.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -291,7 +291,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.danny.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -333,7 +333,7 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
-                  fluid={data.sarah.childImageSharp.fluid}
+                  fluid={data.jando.childImageSharp.fluid}
                   className="kg-image"
                 />
               </figure>
@@ -509,6 +509,13 @@ const indexQuery = graphql`
         }
       }
     }
+    elaina: file(relativePath: { eq: "elaina.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     joeyDuehring: file(relativePath: { eq: "joey-duehring.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
@@ -517,6 +524,20 @@ const indexQuery = graphql`
       }
     }
     tony: file(relativePath: { eq: "tony.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    danny: file(relativePath: { eq: "danny.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    jando: file(relativePath: { eq: "jando.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid

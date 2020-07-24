@@ -1,7 +1,8 @@
 ---
+
 category: artist
 title: Alana
-date: "2020-05-05"
+date: "2020-05-11"
 description: "Delicate but deeply impactful"
 thumbnail: ./alana.png
 facebook:

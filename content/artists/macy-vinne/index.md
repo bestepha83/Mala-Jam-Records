@@ -1,7 +1,8 @@
 ---
+
 category: artist
 title: Macy n Vinne
-date: "2020-05-05"
+date: "2020-05-10"
 description: "Walking the line between bedroom pop and grunge rock"
 thumbnail: ./macy-n-vinne-1.jpg
 facebook:

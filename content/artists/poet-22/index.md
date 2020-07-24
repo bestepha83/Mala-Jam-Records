@@ -1,12 +1,11 @@
 ---
 category: artist
-title: Poet 22
-date: "2020-05-05"
+title: poet22
+date: "2020-05-13"
 description: A longing voice creating a new sound of neo soul RnB
 thumbnail: ./kala-1.JPG
 facebook:
 instagram: https://www.instagram.com/poet22music/
-# instagram: https://instagram.com/poet22music?igshid=11txy3ei42ti0
 spotify: "https://open.spotify.com/artist/0XhB96aRbLvZM4WsBIzVgs?si=gPUV08lgT3CMWcCIBWPDPw"
 youtube:
 soundcloud:

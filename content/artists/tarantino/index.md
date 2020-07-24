@@ -1,8 +1,9 @@
 ---
+
 category: artist
 title: The Tarantino Experience
 artist: The Tarantino Experience
-date: "2020-05-05"
+date: "2020-05-14"
 thumbnail: ./tarantino-banner.jpg
 description: Drug infused, love enthused hip hop
 facebook:

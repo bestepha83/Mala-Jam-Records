@@ -1,7 +1,8 @@
 ---
+
 category: artist
 title: Goodbye Eden
-date: "2020-05-05"
+date: "2020-05-15"
 thumbnail: ./GBE-1.jpg
 description: Nectar for the ears
 tags: ["goodbye eden"]
