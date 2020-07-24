@@ -119,9 +119,9 @@ body {
   margin: 20px;
   animation: fadeIn 2.1s;
 }
-.home-banner video {
+/* .home-banner video {
   position: absolute;
-}
+} */
 
 .error-head {
   height: 75vh;
@@ -171,9 +171,9 @@ body {
   line-height: 1.35em;
 }
 @media (max-width: 500px) {
-  .home-banner video {
+  /* .home-banner video {
     display: none;
-  }
+  } */
   .page-head-description {
     font-size: 1.6rem;
   }
