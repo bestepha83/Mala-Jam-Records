@@ -27,8 +27,10 @@ const BlogIndex = ({ data }) => {
       />
       <video
         className="video-player"
+        // poster="videos/poster.png"
         style={{
           position: "absolute",
+          // position: "fixed",
           top: 0,
           left: 0,
           bottom: 0,
@@ -39,6 +41,7 @@ const BlogIndex = ({ data }) => {
           objectFit: "fill",
           objectPosition: "center",
         }}
+        playsInline
         loop
         muted
         autoPlay
