@@ -47,16 +47,17 @@ module.exports = {
           {
             resolve: "gatsby-remark-embed-video",
             options: {
-                width: 800,
-                ratio: 1.77, 
-                related: false,
-                noIframeBorder: true,
-                urlOverrides: [
-                  {
-                    id: 'youtube',
-                    embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
-                  }
-                ]
+              width: 800,
+              ratio: 1.77,
+              related: false,
+              noIframeBorder: true,
+              urlOverrides: [
+                {
+                  id: "youtube",
+                  embedURL: videoId =>
+                    `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ],
             },
           },
           {
@@ -90,37 +91,37 @@ module.exports = {
       options: {
         pipelines: [
           {
-            name: 'vp9',
+            name: "vp9",
             transcode: chain =>
               chain
-                .videoCodec('libvpx-vp9')
+                .videoCodec("libvpx-vp9")
                 .noAudio()
-                .outputOptions(['-crf 20', '-b:v 0']),
+                .outputOptions(["-crf 20", "-b:v 0"]),
             maxHeight: 480,
             maxWidth: 900,
-            fileExtension: 'webm',
+            fileExtension: "webm",
           },
           {
-            name: 'h264',
+            name: "h264",
             transcode: chain =>
               chain
-                .videoCodec('libx264')
+                .videoCodec("libx264")
                 .noAudio()
-                .addOption('-profile:v', 'main')
-                .addOption('-pix_fmt', 'yuv420p')
-                .outputOptions(['-movflags faststart'])
-                .videoBitrate('1000k'),
+                .addOption("-profile:v", "main")
+                .addOption("-pix_fmt", "yuv420p")
+                .outputOptions(["-movflags faststart"])
+                .videoBitrate("1000k"),
             maxHeight: 480,
             maxWidth: 900,
-            fileExtension: 'mp4',
+            fileExtension: "mp4",
           },
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-anchor-links`,
       options: {
-        offset: -100
+        offset: -100,
       },
     },
     `gatsby-transformer-sharp`,
@@ -133,7 +134,9 @@ module.exports = {
           require("postcss-easy-import")(),
           require("postcss-custom-properties")({ preserve: false }),
           require("postcss-color-function")(),
-          require("autoprefixer")({ overrideBrowserslist: ["last 2 versions"] }),
+          require("autoprefixer")({
+            overrideBrowserslist: ["last 2 versions"],
+          }),
         ],
       },
     },
@@ -149,7 +152,9 @@ module.exports = {
         trackingId: `UA-173302768-1`,
       },
     },
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
   ],

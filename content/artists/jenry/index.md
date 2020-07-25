@@ -5,7 +5,7 @@ date: "2010-02-07"
 description: Like having a deep talk with your best friend
 thumbnail: ./jack-henry-artist.png
 facebook:
-instagram:
+instagram: "https://www.instagram.com/jenryspams/"
 spotify:
 youtube:
 soundcloud:

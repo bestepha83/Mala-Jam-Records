@@ -1,0 +1,158 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "content/assets"
+# public_folder: "content/assets"
+
+collections:
+  - name: "artists"
+    label: "Artists"
+    folder: "content/artists"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", required: true, widget: "string" }
+      - { label: "Publish Date", name: "date", required: true, widget: "date" }
+      - {
+          label: "Category",
+          name: "category",
+          required: true,
+          widget: "string",
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          required: true,
+          widget: "image",
+        }
+      - {
+          label: "Description",
+          name: "description",
+          required: false,
+          widget: "string",
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          required: true,
+          widget: "list",
+          default: ["news"],
+        }
+      - {
+          label: "Facebook",
+          name: "facebook",
+          required: false,
+          widget: "string",
+        }
+      - {
+          label: "Instagram",
+          name: "instagram",
+          required: false,
+          widget: "string",
+        }
+      - { label: "Spotify", name: "spotify", required: false, widget: "string" }
+      - { label: "Youtube", name: "youtube", required: false, widget: "string" }
+      - {
+          label: "Soundcloud",
+          name: "soundcloud",
+          required: false,
+          widget: "string",
+        }
+      - { label: "Twitter", name: "twitter", required: false, widget: "string" }
+      - {
+          label: "Release Count",
+          name: "releases",
+          required: true,
+          widget: "number",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", required: true, widget: "string" }
+      - { label: "Publish Date", name: "date", required: true, widget: "date" }
+      - {
+          label: "Category",
+          name: "category",
+          required: true,
+          widget: "string",
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail2",
+          required: true,
+          widget: "image",
+        }
+      - {
+          label: "Background Image",
+          name: "thumbnail1",
+          required: true,
+          widget: "image",
+        }
+      - {
+          label: "Description",
+          name: "description",
+          required: false,
+          widget: "string",
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          required: true,
+          widget: "list",
+          default: ["news"],
+        }
+      - {
+          label: "Distrokid Link",
+          name: "links",
+          required: false,
+          widget: "string",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "releases"
+    label: "Releases"
+    folder: "content/releases"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", required: true, widget: "string" }
+      - { label: "Artist", name: "artist", required: true, widget: "string" }
+      - { label: "Publish Date", name: "date", required: true, widget: "date" }
+      - {
+          label: "Category",
+          name: "category",
+          required: true,
+          widget: "string",
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          required: true,
+          widget: "image",
+        }
+      - {
+          label: "Description",
+          name: "description",
+          required: false,
+          widget: "string",
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          required: true,
+          widget: "list",
+          default: ["news"],
+        }
+      - {
+          label: "Distrokid Link",
+          name: "links",
+          required: false,
+          widget: "string",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }

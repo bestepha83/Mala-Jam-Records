@@ -7,7 +7,9 @@ import BannerVideo from "../assets/Banner.mp4"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
+{
+  /* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */
+}
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 

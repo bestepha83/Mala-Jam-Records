@@ -10,7 +10,7 @@ instagram: "https://www.instagram.com/goodbyeeden/"
 spotify: "https://open.spotify.com/artist/1cMMqEWen9XdixKNOM9hli?si=E8_dPNdbQ0i9stqBNnONzw"
 youtube:
 soundcloud:
-twitter:
+twitter: https://twitter.com/goodbyeeden
 releases: 3
 ---
 

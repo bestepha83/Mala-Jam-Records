@@ -9,6 +9,7 @@ instagram: https://instagram.com/a.lan.a?igshid=1p99igcxc4caz
 spotify:
 youtube:
 soundcloud:
+twitter:
 tags: ["alana"]
 releases:
 ---

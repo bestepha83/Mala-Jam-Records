@@ -13,6 +13,7 @@ import {
   FaSpotify,
   FaYoutubeSquare,
   FaSoundcloud,
+  FaTwitterSquare,
 } from "react-icons/fa"
 
 class BlogPostTemplate extends React.Component {
@@ -77,7 +78,8 @@ class BlogPostTemplate extends React.Component {
             )}
             {artist.frontmatter.youtube && (
               <a
-                href="https://www.youtube.com"
+                href="youtube.com"
+                // href={artist.frontmatter.youtube}
                 target="_blank"
                 title="Youtube"
                 rel="noopener noreferrer"
@@ -87,12 +89,23 @@ class BlogPostTemplate extends React.Component {
             )}
             {artist.frontmatter.soundcloud && (
               <a
-                href="https://www.soundcloud.com"
+                // href={artist.frontmatter.soundcloud}
+                href="soundcloud.com"
                 target="_blank"
                 title="Soundcloud"
                 rel="noopener noreferrer"
               >
                 <FaSoundcloud />
+              </a>
+            )}
+            {artist.frontmatter.twitter && (
+              <a
+                href={artist.frontmatter.twitter}
+                target="_blank"
+                title="Soundcloud"
+                rel="noopener noreferrer"
+              >
+                <FaTwitterSquare />
               </a>
             )}
           </div>
@@ -152,6 +165,7 @@ export const pageQuery = graphql`
         facebook
         instagram
         spotify
+        twitter
       }
     }
   }
