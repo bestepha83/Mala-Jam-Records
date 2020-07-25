@@ -149,6 +149,28 @@ const AboutPage = ({ data }) => {
             <div className="team-row">
               <figure className="kg-image-card team-col-4">
                 <Img
+                  fluid={data.annah.childImageSharp.fluid}
+                  className="kg-image"
+                />
+              </figure>
+              <div className="team-col-8">
+                <h4>Annah Holmes</h4>
+                <h6>Digital Media Designer</h6>
+                <p>
+                  Annah has a great devotion for many different art mediums.
+                  From mural painting to digital designing, her passion with art
+                  has brought her work all across the nation. Currently, she has
+                  been working on several freelance graphic design projects. She
+                  enjoys working one on one to help rebrand and express her
+                  clients’ business through the visual arts. She is excited to
+                  be working with Mala Jam as they exhibit such amazing talents
+                  within each artist.
+                </p>
+              </div>
+            </div>
+            <div className="team-row">
+              <figure className="kg-image-card team-col-4">
+                <Img
                   fluid={data.isabella.childImageSharp.fluid}
                   className="kg-image"
                 />
@@ -278,7 +300,7 @@ const AboutPage = ({ data }) => {
                 />
               </figure>
               <div className="team-col-8">
-                <h4>Tony Kreuger</h4>
+                <h4>Tony Krueger</h4>
                 <h6>Head Producer</h6>
                 <p>
                   Tony Kreuger, or The Missing Link, is a music producer and
@@ -385,14 +407,15 @@ const AboutPage = ({ data }) => {
                 />
               </figure>
               <div className="team-col-8">
-                <h4>Isabella Crier</h4>
+                <h4>Isabelle Krier</h4>
                 <h6>Violin</h6>
                 <p>
-                  Isabella Crier is a violinist out of Madison, Wisconsin. Her
+                  Isabelle Krier is a violinist out of Madison, Wisconsin. Her
                   musical ability led her to stay in her hometown to pursue a BM
-                  in Violin Performance under a full ride scholarship. After
-                  winning a couple concerto competitions, she has been focused
-                  on ensemble and recorded playing.
+                  in Violin performance under a full ride scholarship as well as
+                  majoring in Biology. After winning a couple concerto
+                  competitions she has been focused on ensemble and recorded
+                  playing for various genres.
                 </p>
               </div>
             </div>
@@ -404,17 +427,16 @@ const AboutPage = ({ data }) => {
                 />
               </figure>
               <div className="team-col-8">
-                <h4>Meredith Neisbit</h4>
+                <h4>Meredith Nesbitt</h4>
                 <h6>Bass, Cello</h6>
                 <p>
-                  Meredith Neisbit has always been a string player, but it
-                  wasn’t always the bass. Originally studying the cello, she
-                  decided to change instruments after she found herself
-                  increasingly involved in the Madison jazz scene. Inspired by
-                  the uplifting qualities of free jazz and drawn to the beauty
-                  of harmony, her playing abilities are vast. Meredith has the
-                  ability to play beautiful classical cello and bass as well as
-                  jazz and groove-based music on the upright and electric bass.
+                  Meredith Nesbitt is an acoustic and electric bassist and
+                  cellist. She has studied under a variety of teachers including
+                  Uri Vardi, Nick Moran, Hana John Taylor and John Christensen.
+                  Originally classically trained, she now spans a variety of
+                  styles including free and straight ahead jazz, rock, folk and
+                  Afrocuban. She draws inspiration from Fred Hopkins and Tomeka
+                  Reid to Cachaito and Andy Shauf, to name a few.
                 </p>
               </div>
             </div>
@@ -461,6 +483,13 @@ const indexQuery = graphql`
       }
     }
     daniel: file(relativePath: { eq: "daniel.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    annah: file(relativePath: { eq: "annah.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
