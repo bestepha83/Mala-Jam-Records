@@ -26,7 +26,7 @@ class BlogPostTemplate extends React.Component {
               <div className="news-image-container">
                 <Img
                   className="kg-image"
-                  fluid={news.frontmatter.thumbnail2.childImageSharp.fluid}
+                  fluid={news.frontmatter.featuredImage.childImageSharp.fluid}
                   alt={news.frontmatter.title}
                 />
               </div>
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        thumbnail2 {
+        featuredImage {
           childImageSharp {
             fluid(maxWidth: 1360) {
               ...GatsbyImageSharpFluid

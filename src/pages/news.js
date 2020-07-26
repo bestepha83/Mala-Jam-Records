@@ -76,7 +76,7 @@ const indexQuery = graphql`
                 }
               }
             }
-            thumbnail2 {
+            featuredImage {
               childImageSharp {
                 fluid(maxWidth: 1360) {
                   ...GatsbyImageSharpFluid

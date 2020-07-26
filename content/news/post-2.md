@@ -2,8 +2,8 @@
 category: news
 title: The Tarantino Experience Releases EP!
 date: "2020-07-24"
-thumbnail1: ./tarantino-banner.jpg
-thumbnail2: ./adolescence.jpg
+thumbnail1: "../assets/blog-images/tarantino-banner.jpg"
+featuredImage: "../assets/blog-images/adolescence.jpg"
 description: It was the best of times, it was the worst of times, it was an age of wisdom, it was the age of foolishness.
 links: "https://distrokid.com/hyperfollow/goodbyeeden/18-daydreams-2"
 tags: ["tarantino experience"]
