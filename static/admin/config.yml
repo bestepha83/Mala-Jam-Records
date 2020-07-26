@@ -19,6 +19,7 @@ collections:
           name: "category",
           required: true,
           widget: "string",
+          default: "news",
         }
       - {
           label: "Featured Image",
@@ -67,6 +68,7 @@ collections:
           name: "category",
           required: true,
           widget: "string",
+          default: "release",
         }
       - {
           label: "Featured Image",
@@ -108,6 +110,7 @@ collections:
           name: "category",
           required: true,
           widget: "string",
+          default: "artist",
         }
       - {
           label: "Featured Image",
