@@ -3,13 +3,13 @@ import { graphql, StaticQuery, Link } from "gatsby"
 
 // import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BannerVideo from "../assets/Banner.mp4"
+import BannerVideo from "../video/Banner.mp4"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-{
-  /* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */
-}
+
+/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */
+
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 
