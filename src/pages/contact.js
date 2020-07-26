@@ -53,42 +53,57 @@ const ContactPage = ({ data }) => {
                 data-netlify-honeypot="bot-field"
               >
                 <div className="contact-input">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                    />
+                  </label>
                 </div>
                 <div className="contact-input">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
+                  <label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </label>
                 </div>
                 <div className="contact-input">
-                  <select name="category" id="category">
-                    <option value>- Category -</option>
-                    <option value={1}>Bookings</option>
-                    <option value={1}>Demo Submissions</option>
-                    <option value={1}>General Inquiries</option>
-                    <option value={1}>Just Wanna Say Hi!</option>
-                  </select>
+                  <label>
+                    <select name="role[]" id="category">
+                      <option value>- Category -</option>
+                      <option value="Bookings">Bookings</option>
+                      <option value="Demos">Demo Submissions</option>
+                      <option value="Inquiries">General Inquiries</option>
+                      <option value="Other">Just Wanna Say Hi!</option>
+                    </select>
+                  </label>
                 </div>
                 <div className="">
-                  <input
-                    type="file"
-                    name="myFile"
-                    id="myFile"
-                    placeholder="Upload Demo"
-                  />
+                  <label>
+                    <input
+                      type="file"
+                      name="myFile"
+                      id="myFile"
+                      placeholder="Upload Demo"
+                    />
+                  </label>
                 </div>
-                <div>{/* <div data-netlify-recaptcha="true"></div> */}</div>
+                <div data-netlify-recaptcha="true"></div>
                 <div className="contact-input">
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Enter your message"
-                    rows={6}
-                    defaultValue={""}
-                  />
+                  <label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Enter your message"
+                      rows={6}
+                      defaultValue={""}
+                    />
+                  </label>
                 </div>
                 <div>
                   <ul className="actions">
