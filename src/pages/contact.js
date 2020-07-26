@@ -48,7 +48,7 @@ const ContactPage = ({ data }) => {
               <form
                 name="contact"
                 method="post"
-                action="POST"
+                action="success"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
@@ -80,9 +80,7 @@ const ContactPage = ({ data }) => {
                     placeholder="Upload Demo"
                   />
                 </div>
-                <div>
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
+                <div>{/* <div data-netlify-recaptcha="true"></div> */}</div>
                 <div className="contact-input">
                   <textarea
                     name="message"
@@ -102,7 +100,7 @@ const ContactPage = ({ data }) => {
                       />
                     </li> */}
                     <button type="submit" className="primary">
-                      Send Message
+                      Send
                     </button>
                     <li>
                       <input type="reset" defaultValue="Reset" />
