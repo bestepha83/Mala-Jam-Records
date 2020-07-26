@@ -47,7 +47,7 @@ const ContactPage = ({ data }) => {
             <div className="col-6">
               <form
                 name="contact"
-                method="post"
+                method="POST"
                 action="success"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
