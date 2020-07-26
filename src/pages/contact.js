@@ -46,6 +46,7 @@ const ContactPage = ({ data }) => {
             </div>
             <div className="col-6">
               <form
+                name="contact"
                 method="post"
                 action="POST"
                 data-netlify="true"
