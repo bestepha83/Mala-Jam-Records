@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { navigateTo } from "gatsby-link"
+import contactImage from "../images/contact.jpg"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
@@ -392,14 +393,11 @@ export default class Contact extends React.Component {
               <p>For demo submissions, please include a file or link.</p>
             </div>
             <div className="row contact-content">
-              {/* <div className="col-6">
+              <div className="col-6">
                 <figure className="kg-image-card">
-                  <Img
-                    fluid={data.contact.childImageSharp.fluid}
-                    className="kg-image"
-                  />
+                  <img src={contactImage} className="kg-image" />
                 </figure>
-              </div> */}
+              </div>
               <div className="col-6">
                 <form
                   name="contact"
