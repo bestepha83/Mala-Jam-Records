@@ -62,7 +62,7 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </div>
-                <div className="contact-input">
+                {/* <div className="contact-input">
                   <label>
                     <input
                       type="email"
@@ -74,7 +74,7 @@ const ContactPage = ({ data }) => {
                 </div>
                 <div className="contact-input">
                   <label>
-                    <select name="role[]" id="category">
+                    <select name="role[]" id="category" multiple>
                       <option value>- Category -</option>
                       <option value="Bookings">Bookings</option>
                       <option value="Demos">Demo Submissions</option>
@@ -104,7 +104,7 @@ const ContactPage = ({ data }) => {
                       defaultValue={""}
                     />
                   </label>
-                </div>
+                </div> */}
                 <div>
                   <ul className="actions">
                     {/* <li>
