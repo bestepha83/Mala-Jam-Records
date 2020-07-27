@@ -48,9 +48,8 @@ const ContactPage = ({ data }) => {
               <form
                 name="contact"
                 method="POST"
-                // action="success"
+                action="success"
                 data-netlify="true"
-                // netlify
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -74,7 +73,7 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </p>
-                {/* <div className="contact-input">
+                <div className="contact-input">
                   <label>
                     <select name="role[]" id="category">
                       <option value>- Category -</option>
@@ -95,7 +94,7 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </div>
-                <div data-netlify-recaptcha="true"></div> */}
+                <div data-netlify-recaptcha="true"></div>
                 <p className="contact-input">
                   <label>
                     <textarea
@@ -111,39 +110,11 @@ const ContactPage = ({ data }) => {
                   <button type="submit" className="primary">
                     Send
                   </button>
-                  {/* <input type="reset" defaultValue="Reset" /> */}
+                  <input type="reset" defaultValue="Reset" />
                 </p>
+                <input type="hidden" name="bot-field" />
               </form>
             </div>
-            <form name="Contact 2" method="POST" data-netlify="true">
-              <p>
-                <label>
-                  Your Name: <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your Email: <input type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your Role:{" "}
-                  <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                  </select>
-                </label>
-              </p>
-              <p>
-                <label>
-                  Message: <textarea name="message"></textarea>
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
           </div>
         </div>
       </article>
