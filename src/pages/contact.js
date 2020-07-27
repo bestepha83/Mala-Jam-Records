@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -339,10 +339,13 @@ export default class Contact extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
   handleEmail = e => {
-    this.setState({ [e.target.email]: e.target.value })
+    this.setState({ [e.target.name]: e.target.value })
+  }
+  handleCategory = e => {
+    this.setState({ [e.target.name]: e.target.value })
   }
   handleMessage = e => {
-    this.setState({ [e.target.message]: e.target.value })
+    this.setState({ [e.target.name]: e.target.value })
   }
 
   handleAttachment = e => {
@@ -432,7 +435,11 @@ export default class Contact extends React.Component {
                   </p>
                   <div className="contact-input">
                     <label>
-                      <select name="role[]" id="category">
+                      <select
+                        name="role[]"
+                        id="category"
+                        onChange={this.handleCategory}
+                      >
                         <option value>- Category -</option>
                         <option value="Bookings">Bookings</option>
                         <option value="Demos">Demo Submissions</option>
@@ -480,23 +487,39 @@ export default class Contact extends React.Component {
     )
   }
 }
+// const data = useStaticQuery(graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     contact: file(relativePath: { eq: "contact.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1360) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `)
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    contact: file(relativePath: { eq: "contact.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     contact: file(relativePath: { eq: "contact.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1360) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `
 
 // export default props => (
 //   <StaticQuery

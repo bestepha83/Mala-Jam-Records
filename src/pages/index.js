@@ -30,7 +30,6 @@ const BlogIndex = ({ data }) => {
       <video
         className="video-player"
         style={{
-          // position: "absolute",
           position: "fixed",
           top: 0,
           left: 0,
