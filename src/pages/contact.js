@@ -49,8 +49,7 @@ const ContactPage = ({ data }) => {
                 name="contact"
                 method="POST"
                 // action="success"
-                // data-netlify="true"
-                netlify
+                data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
                 <div className="contact-input">
@@ -63,7 +62,7 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </div>
-                {/* <div className="contact-input">
+                <div className="contact-input">
                   <label>
                     <input
                       type="email"
@@ -73,9 +72,9 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </div>
-                <div className="contact-input">
+                {/* <div className="contact-input">
                   <label>
-                    <select name="role[]" id="category" multiple>
+                    <select name="role[]" id="category">
                       <option value>- Category -</option>
                       <option value="Bookings">Bookings</option>
                       <option value="Demos">Demo Submissions</option>
@@ -83,8 +82,8 @@ const ContactPage = ({ data }) => {
                       <option value="Other">Just Wanna Say Hi!</option>
                     </select>
                   </label>
-                </div>
-                <div className="">
+                </div> */}
+                {/* <div className="">
                   <label>
                     <input
                       type="file"
@@ -93,7 +92,7 @@ const ContactPage = ({ data }) => {
                       placeholder="Upload Demo"
                     />
                   </label>
-                </div>
+                </div> */}
                 <div data-netlify-recaptcha="true"></div>
                 <div className="contact-input">
                   <label>
@@ -105,7 +104,7 @@ const ContactPage = ({ data }) => {
                       defaultValue={""}
                     />
                   </label>
-                </div> */}
+                </div>
                 <div className="actions">
                   <button type="submit" className="primary">
                     Send
