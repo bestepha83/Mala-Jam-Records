@@ -49,7 +49,8 @@ const ContactPage = ({ data }) => {
                 name="contact"
                 method="POST"
                 // action="success"
-                data-netlify="true"
+                // data-netlify="true"
+                netlify
                 data-netlify-honeypot="bot-field"
               >
                 <p className="contact-input">
@@ -82,8 +83,8 @@ const ContactPage = ({ data }) => {
                       <option value="Other">Just Wanna Say Hi!</option>
                     </select>
                   </label>
-                </div> */}
-                {/* <div className="">
+                </div>
+                <div className="">
                   <label>
                     <input
                       type="file"
@@ -92,8 +93,8 @@ const ContactPage = ({ data }) => {
                       placeholder="Upload Demo"
                     />
                   </label>
-                </div> */}
-                {/* <div data-netlify-recaptcha="true"></div> */}
+                </div>
+                <div data-netlify-recaptcha="true"></div> */}
                 <p className="contact-input">
                   <label>
                     <textarea
@@ -113,6 +114,35 @@ const ContactPage = ({ data }) => {
                 </p>
               </form>
             </div>
+            <form name="Contact 2" method="POST" data-netlify="true">
+              <p>
+                <label>
+                  Your Name: <input type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Your Email: <input type="email" name="email" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Your Role:{" "}
+                  <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Message: <textarea name="message"></textarea>
+                </label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
           </div>
         </div>
       </article>
