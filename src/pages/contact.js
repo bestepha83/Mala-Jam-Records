@@ -48,8 +48,9 @@ const ContactPage = ({ data }) => {
               <form
                 name="contact"
                 method="POST"
-                action="success"
-                data-netlify="true"
+                // action="success"
+                // data-netlify="true"
+                netlify
                 data-netlify-honeypot="bot-field"
               >
                 <div className="contact-input">
@@ -105,22 +106,11 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </div> */}
-                <div>
-                  <ul className="actions">
-                    {/* <li>
-                      <input
-                        type="submit"
-                        defaultValue="Send Message"
-                        className="primary"
-                      />
-                    </li> */}
-                    <button type="submit" className="primary">
-                      Send
-                    </button>
-                    <li>
-                      <input type="reset" defaultValue="Reset" />
-                    </li>
-                  </ul>
+                <div className="actions">
+                  <button type="submit" className="primary">
+                    Send
+                  </button>
+                  <input type="reset" defaultValue="Reset" />
                 </div>
               </form>
             </div>
