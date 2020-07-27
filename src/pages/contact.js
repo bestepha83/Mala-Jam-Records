@@ -52,7 +52,7 @@ const ContactPage = ({ data }) => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
               >
-                <div className="contact-input">
+                <p className="contact-input">
                   <label>
                     <input
                       type="text"
@@ -61,8 +61,8 @@ const ContactPage = ({ data }) => {
                       placeholder="Name"
                     />
                   </label>
-                </div>
-                <div className="contact-input">
+                </p>
+                <p className="contact-input">
                   <label>
                     <input
                       type="email"
@@ -71,7 +71,7 @@ const ContactPage = ({ data }) => {
                       placeholder="Email"
                     />
                   </label>
-                </div>
+                </p>
                 {/* <div className="contact-input">
                   <label>
                     <select name="role[]" id="category">
@@ -93,8 +93,8 @@ const ContactPage = ({ data }) => {
                     />
                   </label>
                 </div> */}
-                <div data-netlify-recaptcha="true"></div>
-                <div className="contact-input">
+                {/* <div data-netlify-recaptcha="true"></div> */}
+                <p className="contact-input">
                   <label>
                     <textarea
                       name="message"
@@ -104,13 +104,13 @@ const ContactPage = ({ data }) => {
                       defaultValue={""}
                     />
                   </label>
-                </div>
-                <div className="actions">
+                </p>
+                <p className="actions">
                   <button type="submit" className="primary">
                     Send
                   </button>
-                  <input type="reset" defaultValue="Reset" />
-                </div>
+                  {/* <input type="reset" defaultValue="Reset" /> */}
+                </p>
               </form>
             </div>
           </div>
