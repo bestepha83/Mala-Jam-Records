@@ -86,12 +86,7 @@ const ContactPage = ({ data }) => {
                 </div>
                 <div className="">
                   <label>
-                    <input
-                      type="file"
-                      name="myFile"
-                      id="myFile"
-                      placeholder="Upload Demo"
-                    />
+                    <input type="file" name="file" placeholder="Upload Demo" />
                   </label>
                 </div>
                 <div data-netlify-recaptcha="true"></div>
