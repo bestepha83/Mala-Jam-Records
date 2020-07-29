@@ -22,6 +22,8 @@ const BlogIndex = ({ data }) => {
           `mala jam artists`,
           `malajam records`,
           `malajam artists`,
+          `mala jam music`,
+          `malajam music`,
           `wisconsin record label`,
           `record label near me`,
           `madison record label`,
@@ -57,9 +59,7 @@ const BlogIndex = ({ data }) => {
       </video>
       <header className="page-head">
         <h1>Mala Jam Records</h1>
-        <h2 className="page-head-title">
-          {data.site.siteMetadata.description}
-        </h2>
+        <h2 className="page-head-title">Transforming Raw Music Into Art</h2>
         <Link to="/artists" className="button primary large">
           Explore
         </Link>
