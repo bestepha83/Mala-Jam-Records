@@ -467,14 +467,14 @@ const indexQuery = graphql`
         title
       }
     }
-    henry: file(relativePath: { eq: "henry.jpg" }) {
+    henry: file(relativePath: { eq: "henry-about.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    jack: file(relativePath: { eq: "jack.jpg" }) {
+    jack: file(relativePath: { eq: "jack-about.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
@@ -551,7 +551,7 @@ const indexQuery = graphql`
         }
       }
     }
-    jando: file(relativePath: { eq: "jando.jpg" }) {
+    jando: file(relativePath: { eq: "jando-about.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
