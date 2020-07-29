@@ -19,13 +19,23 @@ const BlogIndex = ({ data }) => {
       <SEO
         title="Artists"
         keywords={[
-          `mala jam`,
-          `malajam`,
-          `record label`,
-          `music`,
-          `artists`,
-          `releases`,
+          `mala jam artists`,
+          `malajam artists`,
+          `record label artists`,
+          `record label website`,
+          `wisconsin record label`,
+          `record label near me`,
+          `madison record label`,
+          `best record labels`,
+          `musical art`,
+          `transforming art`,
+          `goodbye eden`,
+          `good bye eden`,
+          `the tarantino experience`,
+          `stray roses`,
+          `susie mccollum`,
         ]}
+        description="The artists of mala jam records are a unqiue blend of genres and styles"
       />
 
       <section>

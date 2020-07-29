@@ -860,6 +860,13 @@ body {
   margin-bottom: 30px;
 }
 
+.footnote-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
 .footnotes {
   font-size: 1.5rem;
 }

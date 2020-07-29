@@ -26,6 +26,7 @@ const BlogIndex = ({ data }) => {
           `artists`,
           `releases`,
         ]}
+        description="Mala Jam Records always has news, from new artist signings to record releases to performing events. Check out the latest from Mala Jam Records."
       />
 
       <Scroll showBelow={250} />

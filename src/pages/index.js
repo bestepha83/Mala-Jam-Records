@@ -18,14 +18,21 @@ const BlogIndex = ({ data }) => {
       <SEO
         title="Home"
         keywords={[
-          `mala jam`,
-          `malajam`,
-          `record label`,
-          `music`,
-          `artists`,
-          `releases`,
+          `mala jam records`,
+          `mala jam artists`,
+          `malajam records`,
+          `malajam artists`,
+          `wisconsin record label`,
+          `record label near me`,
+          `madison record label`,
+          `best record labels`,
+          `record label website`,
+          `record studios`,
+          `studios for music`,
+          `record company`,
           `la record label`,
         ]}
+        description="Mala Jam Records is an independent record label dedicated to creating a community of artists."
       />
       <video
         className="video-player"

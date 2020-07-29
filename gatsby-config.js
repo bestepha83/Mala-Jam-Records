@@ -7,9 +7,6 @@ module.exports = {
     author: siteConfig.author,
     description: siteConfig.description,
     siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
-    social: {
-      twitter: siteConfig.twitter,
-    },
   },
   plugins: [
     {
@@ -164,5 +161,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
   ],
 }

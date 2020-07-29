@@ -18,12 +18,19 @@ const AboutPage = ({ data }) => {
       <SEO
         title="About"
         keywords={[
-          `mala jam`,
-          `malajam`,
-          `record label`,
-          `music`,
-          `artists`,
-          `releases`,
+          `mala jam records`,
+          `mala jam artists`,
+          `malajam records`,
+          `malajam artists`,
+          `wisconsin record label`,
+          `record label near me`,
+          `madison record label`,
+          `best record labels`,
+          `record label website`,
+          `record studios`,
+          `studios for music`,
+          `record company`,
+          `la record label`,
         ]}
       />
 

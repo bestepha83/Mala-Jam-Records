@@ -17,15 +17,28 @@ const AboutPage = ({ data }) => {
       <SEO
         title="Employees"
         keywords={[
-          `mala jam`,
-          `malajam`,
-          `record label`,
-          `music`,
-          `artists`,
-          `releases`,
+          `mala jam records`,
+          `mala jam employees`,
+          `mala jam leaders`,
+          `mala jam workers`,
+          `malajam records`,
+          `malajam employees`,
+          `mala jam photographers`,
+          `malajam photographers`,
+          `mala jam graphic designers`,
+          `malajam graphic designers`,
+          `mala jam designers`,
+          `malajam designers`,
+          `wisconsin record label`,
+          `mala jam ceo`,
+          `malajam ceo`,
+          `mala jam leader board`,
+          `malajam leader board`,
+          `malajam executives`,
+          `mala jam executives`,
         ]}
+        description="Mala Jam Records employees are experienced in all aspects of the music industry. The combined Mala Jam community help cultivate a complete musical experience for the audience."
       />
-
       <article className="page-template no-image">
         <Scroll showBelow={250} />
         <div className="team-content-body">

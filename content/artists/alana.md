@@ -1,6 +1,6 @@
 ---
 category: artist
-title: Alana
+title: Lana Leone
 date: "2015-05-11"
 description: "Delicate but deeply impactful"
 thumbnail: ../assets/alana-banner.jpg

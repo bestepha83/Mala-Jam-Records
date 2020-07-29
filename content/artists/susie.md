@@ -3,8 +3,9 @@ category: artist
 title: Susie McCollum
 artist: Susie
 date: "2017-07-12"
-description: A clever and uninhibited twist on coffee house pop
+description: A clever and uninhibited twist on coffeehouse pop
 thumbnail: ../assets/susie-2.png
+picturecreds: Joana Meurkens
 facebook:
 instagram: "https://www.instagram.com/susiemccollum/"
 spotify:

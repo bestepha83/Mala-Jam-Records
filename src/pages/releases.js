@@ -26,6 +26,7 @@ const BlogIndex = ({ data }) => {
           `artists`,
           `releases`,
         ]}
+        description="Mala Jam Records discography, albums released on the Mala Jam Records label from its founding in 2020 to now. Explore releases from Mala Jam Records. Discover what's missing in your discography."
       />
 
       <Scroll showBelow={250} />

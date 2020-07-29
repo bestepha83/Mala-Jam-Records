@@ -44,6 +44,11 @@ class BlogPostTemplate extends React.Component {
                 </div>
               )}
             </div>
+            <div className="footnote-container">
+              <p className="footnotes">
+                Photo: {artist.frontmatter.picturecreds}
+              </p>
+            </div>
           </div>
           <div className="artist-links">
             {artist.frontmatter.facebook && (
@@ -162,6 +167,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        picturecreds
         facebook
         instagram
         spotify
