@@ -46,7 +46,7 @@ class BlogPostTemplate extends React.Component {
             </div>
             <div className="footnote-container">
               <p className="footnotes">
-                Photo: {artist.frontmatter.picturecreds}
+                {/* Photo: {artist.frontmatter.picturecreds} */}
               </p>
             </div>
           </div>

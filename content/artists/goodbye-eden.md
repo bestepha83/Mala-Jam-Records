@@ -37,7 +37,7 @@ The band is currently working on their second album and focusing on discovering 
 
 <h6>Ben Stephan - Guitar</h6>
 
-![Charlie Monroe](../assets/charlie.jpg)
+![Charlie Monroe](../assets/charlie-2.jpg)
 
 <h6>Charlie Monroe - Piano and Synthesizer </h6>
 
