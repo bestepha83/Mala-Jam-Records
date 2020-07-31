@@ -161,5 +161,18 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Mala Jam",
+        short_name: "Malajam",
+        start_url: "/",
+        background_color: "white",
+        theme_color: "white",
+        display: "standalone",
+        icon: "src/images/logo-circle.png",
+        crossOrigin: `use-credentials`,
+      },
+    },
   ],
 }

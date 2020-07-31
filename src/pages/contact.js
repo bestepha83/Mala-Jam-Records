@@ -2,11 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { navigateTo } from "gatsby-link"
-import contactImage from "../images/contact.jpg"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+
+import { navigateTo } from "gatsby-link"
+import contactImage from "../images/contact.jpg"
 
 function encode(data) {
   const formData = new FormData()

@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
 
-// import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BannerVideo from "../video/Banner.mp4"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+
+import BannerVideo from "../video/Banner.mp4"
 
 /* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */
 

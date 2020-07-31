@@ -1,13 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
-import Scroll from "../components/backToTop"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
+import Img from "gatsby-image"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
+
+import Scroll from "../components/backToTop"
 
 const AboutPage = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title

@@ -27,10 +27,12 @@ const Layout = props => {
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
         <div className="site-head-container">
-          <a
+          <div
             className="nav-burger"
-            href={`#`}
             onClick={() => setToggleNav(!toggleNav)}
+            onKeyDown={() => setToggleNav(!toggleNav)}
+            role="button"
+            tabIndex={0}
           >
             <div
               className="hamburger hamburger--collapse"
@@ -41,7 +43,7 @@ const Layout = props => {
                 <div className="hamburger-inner" />
               </div>
             </div>
-          </a>
+          </div>
           <nav id="swup" className="site-head-left">
             <ul className="nav">
               <li className="nav-home">

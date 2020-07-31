@@ -1,10 +1,10 @@
 import React from "react"
-import Layout from "../components/layout"
-import Scroll from "../components/backToTop"
 import { graphql, StaticQuery } from "gatsby"
 
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/artistCard"
+import Scroll from "../components/backToTop"
 
 import "../utils/normalize.css"
 import "../utils/css/screen.css"

@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Scroll from "../components/backToTop"
 
 import "../utils/normalize.css"
