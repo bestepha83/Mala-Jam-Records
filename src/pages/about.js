@@ -123,7 +123,7 @@ const AboutPage = ({ data }) => {
                 />
               </figure>
               <h6>Label Executives</h6>
-              <p>Top dogs. They run this shit.</p>
+              <p>Moving Things Forwards</p>
               <AnchorLink
                 to="/employee#executives"
                 className="button primary large"
