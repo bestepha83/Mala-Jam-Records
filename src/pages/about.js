@@ -46,6 +46,7 @@ const AboutPage = ({ data }) => {
                 <Img
                   fluid={data.jackhenry1.childImageSharp.fluid}
                   className="kg-image"
+                  alt="mala jam records"
                 />
               </figure>
             </div>
@@ -78,8 +79,8 @@ const AboutPage = ({ data }) => {
               <h5>Our Mission</h5>
               <p>
                 Mala Jam Records is an independent record label dedicated to
-                promoting artists. Our mission is to create a community
-                dedicated to artist development and success.
+                enabling, producing, and procurring a new generation of
+                self-made music.
               </p>
               <h5>What We Do</h5>
               <p>
@@ -118,6 +119,7 @@ const AboutPage = ({ data }) => {
                 <Img
                   fluid={data.executives.childImageSharp.fluid}
                   className="kg-image"
+                  alt="mala jam records"
                 />
               </figure>
               <h6>Label Executives</h6>
@@ -134,6 +136,7 @@ const AboutPage = ({ data }) => {
                 <Img
                   fluid={data.visual.childImageSharp.fluid}
                   className="kg-image"
+                  alt="mala jam records"
                 />
               </figure>
               <h6>Visual Artists</h6>
@@ -150,6 +153,7 @@ const AboutPage = ({ data }) => {
                 <Img
                   fluid={data.studio.childImageSharp.fluid}
                   className="kg-image"
+                  alt="mala jam records"
                 />
               </figure>
               <h6>The Studio</h6>

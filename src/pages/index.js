@@ -8,8 +8,6 @@ import "../utils/css/screen.css"
 
 import BannerVideo from "../video/Banner.mp4"
 
-/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */
-
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 
@@ -34,7 +32,7 @@ const BlogIndex = ({ data }) => {
           `record company`,
           `la record label`,
         ]}
-        description="Mala Jam Records is an independent record label dedicated to creating a community of artists."
+        description="Mala Jam Records is an independent record label dedicated to enabling, producing, and procurring a new generation of self-made music."
       />
       <video
         className="video-player"
@@ -59,7 +57,10 @@ const BlogIndex = ({ data }) => {
       </video>
       <header className="page-head">
         <h1>Mala Jam Records</h1>
-        <h2 className="page-head-title">Transforming Raw Music Into Art</h2>
+        <h2 className="page-head-title">
+          Mala Jam Records is an independent record label dedicated to enabling,
+          producing, and procurring a new generation of self-made music
+        </h2>
         <Link to="/artists" className="button primary large">
           Explore
         </Link>
