@@ -58,8 +58,7 @@ const BlogIndex = ({ data }) => {
       <header className="page-head">
         <h1>Mala Jam Records</h1>
         <h2 className="page-head-title">
-          Mala Jam Records is an independent record label dedicated to enabling,
-          producing, and procurring a new generation of self-made music
+          Producing and enabling the next generation of self-made music
         </h2>
         <Link to="/artists" className="button primary large">
           Explore
